@@ -4,6 +4,7 @@ Per-request context (AsyncLocalStorage) for NestJS — read the current request 
 
 [![npm version](https://img.shields.io/npm/v/%40neomaventures%2Frequest-context)](https://www.npmjs.com/package/@neomaventures/request-context)
 [![CI](https://github.com/neomaventures/request-context/actions/workflows/ci.yml/badge.svg)](https://github.com/neomaventures/request-context/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
