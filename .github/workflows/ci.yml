@@ -18,6 +18,10 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # The e2e app imports this package by name, which Node self-references
+      # through the exports map; import-x/order cannot classify that import
+      # until dist/ exists, so the build precedes lint.
+      - run: pnpm build
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test
